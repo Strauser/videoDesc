@@ -1,0 +1,40 @@
+li {
+    list-style: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#editor {
+    height: 1000px;
+    border: 1px solid lightgrey;
+}
+
+.padding-top-7 {
+    padding-top: 7px;
+}
+
+/* checkboxes */
+input[type="checkbox"].styled:checked + label:after,
+.checkbox input[type=checkbox]:checked + label:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e013";
+}
+
+input[type="checkbox"].styled:checked label:after,
+.checkbox label:after {
+    padding-left: 4px;
+    padding-top: 2px;
+    font-size: 9px;
+}
+
+.checkbox input {
+    width: 17px;
+    height: 17px;
+    margin-top: 1px;
+}

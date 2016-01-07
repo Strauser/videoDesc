@@ -1,0 +1,36 @@
+<div class="col-md-6 padding-top-7">
+    <div class="panel panel-primary" ng-repeat="category in accessories">
+        <div class="panel-heading">
+            <h4 class="panel-title">{{category.name}}</h4>
+        </div>
+
+        <div class="panel-body">
+            <ul>
+                <li ng-repeat="accessory in category.list">
+
+                    <div class="col-sm-12">
+                        <div class="checkbox checkbox-default">
+                            <input class="pointer" type="checkbox" ng-model="accessory.selected"/>
+                            <label ng-click="selectItem(accessory)">
+                                <span ng-class="{'bold' : accessory.selected}">{{accessory.name}}</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 padding-top-7">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4 class="panel-title">Résultat</h4>
+        </div>
+
+        <div class="panel-body">
+            <div id="editor"></div>
+        </div>
+    </div>
+</div>
