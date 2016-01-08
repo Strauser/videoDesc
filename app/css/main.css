@@ -10,9 +10,13 @@ li {
     cursor: pointer;
 }
 
-#editor {
+.editor {
     height: 1000px;
     border: 1px solid lightgrey;
+}
+
+.editor.sm-editor {
+    height: 250px;
 }
 
 .padding-top-7 {

@@ -1,4 +1,15 @@
 <div class="col-md-6 padding-top-7">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4 class="panel-title">Intro</h4>
+        </div>
+
+        <div class="panel-body">
+            <div id="introEditor" class="editor sm-editor"></div>
+        </div>
+    </div>
+
     <div class="panel panel-primary" ng-repeat="category in accessories">
         <div class="panel-heading">
             <h4 class="panel-title">{{category.name}}</h4>
@@ -10,7 +21,7 @@
 
                     <div class="col-sm-12">
                         <div class="checkbox checkbox-default">
-                            <input class="pointer" type="checkbox" ng-model="accessory.selected"/>
+                            <input class="pointer" type="checkbox" ng-model="accessory.selected" ng-click="selectCheckBox(accessory)"/>
                             <label ng-click="selectItem(accessory)">
                                 <span ng-class="{'bold' : accessory.selected}">{{accessory.name}}</span>
                             </label>
@@ -18,9 +29,27 @@
                     </div>
 
                 </li>
+                <li>
+                    <form class="form-inline" id="catForm{{$index}}">
+                        <input class="form-control" type="text" ng-model="newItems[$index].name"/>
+                        <input class="form-control" type="text" ng-model="newItems[$index].desc"/>
+                        <input class="btn btn-primary form-control" type="submit" ng-click="newItem($index)" value="+">
+                    </form>
+                </li>
             </ul>
         </div>
     </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4 class="panel-title">Outro</h4>
+        </div>
+
+        <div class="panel-body">
+            <div id="outroEditor" class="editor sm-editor"></div>
+        </div>
+    </div>
+
 </div>
 
 <div class="col-md-6 padding-top-7">
@@ -30,7 +59,7 @@
         </div>
 
         <div class="panel-body">
-            <div id="editor"></div>
+            <div id="resultEditor" class="editor"></div>
         </div>
     </div>
 </div>
