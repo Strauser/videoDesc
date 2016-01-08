@@ -15,12 +15,8 @@ angular.module('desc-service', [])
                     name: "Vernis",
                     list: [
                         {
-                            name: "True Black",
-                            desc: "True Black (lien : http://www.lien.com)"
-                        },
-                        {
-                            name: "True White",
-                            desc: "True White (lien : http://www.lien.com)"
+                            name: "Base et Top Skin Food",
+                            desc: "Base et Top Coat Skin food (dispo sur mon eshop http://www.bijoux-faits-main.com/category.php?id_category=88)"
                         }
                     ]
                 },
@@ -28,16 +24,20 @@ angular.module('desc-service', [])
                     name: "Accessoires",
                     list: [
                         {
-                            name: "Dotting Tool",
-                            desc: "Dotting Tool (lien : http://www.lien.com)"
-                        },
-                        {
-                            name: "Fan Brush",
-                            desc: "Fan Brush (lien : http://www.lien.com)"
-                        },
-                        {
                             name: "Pinceau fin",
-                            desc: "Pinceau fin (lien : http://www.lien.com)"
+                            desc: "Pinceau fin (http://www.bijoux-faits-main.com/product.php?id_product=922#mignon)"
+                        },
+                        {
+                            name: "Stripping Tape",
+                            desc: "Stripping Tape (http://www.bijoux-faits-main.com/category.php?id_category=37)"
+                        },
+                        {
+                            name: "Cure dent",
+                            desc: "Cure dent"
+                        },
+                        {
+                            name: "Peinture acrylique blanche",
+                            desc: "Peinture acrylique blanche"
                         }
                     ]
                 },
@@ -45,10 +45,10 @@ angular.module('desc-service', [])
                     name: "Contours",
                     list: [
                         {
-                            name: "Pinceau biseauté",
-                            desc: "Pinceau biseauté nettoyage de cuticules dans le kit pinceau (dispo sur mon eshop http://www.bijoux-faits-main.com/prod...)\n" +
-                            "- Pinceau plat pour nettoyer les contours avec du dissolvant (dispo sur mon eshop http://www.bijoux-faits-main.com/cate...)\n" +
-                            "- Pompe à dissolvant (dispo sur mon eshop http://www.bijoux-faits-main.com/prod...)"
+                            name: "Contours",
+                            desc: "Pinceau biseauté nettoyage de cuticules dans le kit pinceau (dispo sur mon eshop http://www.bijoux-faits-main.com/product.php?id_product=175)\n" +
+                            "- Pinceau plat pour nettoyer les contours avec du dissolvant (dispo sur mon eshop http://www.bijoux-faits-main.com/category.php?id_category=69)\n" +
+                            "- Pompe à dissolvant (dispo sur mon eshop http://www.bijoux-faits-main.com/product.php?id_product=1013)"
 
                         }
                     ]
@@ -67,8 +67,7 @@ angular.module('desc-service', [])
                 "S H O P : http://www.bijoux-faits-main.com\n" +
                 "F A C E B O O K : https://www.facebook.com/pages/Yoko-Nail-Art/101032073271306\n" +
                 "I N S T A G R A M : @yokonailart\n" +
-                "T W I T T E R : @yokonailart\n" +
-                "*Merci à Beauté Privée d’avoir sponsorisé ce contenu\n\n" +
+                "T W I T T E R : @yokonailart\n\n" +
 
                 "Je filme avec un Nikon D5100 et je monte avec Final Cut Pro X\n" +
                 "Musique Youtube Audio Library\n" +
