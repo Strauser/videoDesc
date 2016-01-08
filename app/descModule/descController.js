@@ -5,7 +5,7 @@ angular.module('desc-controller', ['desc-service'])
         $scope.newItems = [];
 
         for(var categoryI in $scope.accessories) {
-            $scope.newItems.push({});
+            $scope.newItems.push("");
         }
 
 
@@ -17,7 +17,7 @@ angular.module('desc-controller', ['desc-service'])
         outroEditor.on('change', function() { resultEditor.setValue(computeResult(), 1); });
 
 
-        $scope.selectCheckBox = function(item) {
+        $scope.displayResult = function() {
             resultEditor.setValue(computeResult(), 1);
         };
         $scope.selectItem = function(item) {
@@ -26,12 +26,11 @@ angular.module('desc-controller', ['desc-service'])
         };
 
         $scope.newItem = function(index) {
-            var name = $scope.newItems[index].name;
-            var desc = $scope.newItems[index].desc;
-            if(name) {
-                $scope.accessories[index].list.push({name: name, desc: desc});
-                $scope.newItems[index].name = "";
-                $scope.newItems[index].desc = "";
+            var accessory = $scope.newItems[index];
+            if(accessory) {
+                $scope.accessories[index].list.push({name: accessory, desc: accessory, selected: true});
+                $scope.newItems[index] = "";
+                $scope.displayResult();
             }
         };
 
@@ -63,7 +62,7 @@ angular.module('desc-controller', ['desc-service'])
             for(var itemI in list) {
                 var item = list[itemI];
                 if(item.selected) {
-                    result += item.name + " " + item.desc + "\n";
+                    result += "- " + item.desc + "\n";
                 }
             }
 

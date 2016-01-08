@@ -16,11 +16,11 @@ angular.module('desc-service', [])
                     list: [
                         {
                             name: "True Black",
-                            desc: "(lien : http://www.lien.com)"
+                            desc: "True Black (lien : http://www.lien.com)"
                         },
                         {
                             name: "True White",
-                            desc: "(lien : http://www.lien.com)"
+                            desc: "True White (lien : http://www.lien.com)"
                         }
                     ]
                 },
@@ -29,15 +29,27 @@ angular.module('desc-service', [])
                     list: [
                         {
                             name: "Dotting Tool",
-                            desc: "(lien : http://www.lien.com)"
+                            desc: "Dotting Tool (lien : http://www.lien.com)"
                         },
                         {
                             name: "Fan Brush",
-                            desc: "(lien : http://www.lien.com)"
+                            desc: "Fan Brush (lien : http://www.lien.com)"
                         },
                         {
                             name: "Pinceau fin",
-                            desc: "(lien : http://www.lien.com)"
+                            desc: "Pinceau fin (lien : http://www.lien.com)"
+                        }
+                    ]
+                },
+                {
+                    name: "Contours",
+                    list: [
+                        {
+                            name: "Pinceau biseauté",
+                            desc: "Pinceau biseauté nettoyage de cuticules dans le kit pinceau (dispo sur mon eshop http://www.bijoux-faits-main.com/prod...)\n" +
+                            "- Pinceau plat pour nettoyer les contours avec du dissolvant (dispo sur mon eshop http://www.bijoux-faits-main.com/cate...)\n" +
+                            "- Pompe à dissolvant (dispo sur mon eshop http://www.bijoux-faits-main.com/prod...)"
+
                         }
                     ]
                 }
